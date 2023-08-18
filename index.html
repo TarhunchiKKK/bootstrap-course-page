@@ -3,85 +3,60 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Мой первый сайт с использованием Bootstrap 5.0">
-        <meta name="keywords" content="Bootstrap 5, CSS, HTML, JavaScript, Bootstrap Documentation">
-        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <meta name="description" content="Мой первый сайт с использованием Bootstrap 5.0">              <!-- Document description --> 
+        <meta name="keywords" content="Bootstrap 5, CSS, HTML, JavaScript, Bootstrap Documentation">    <!-- Document keywords -->
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">                           <!-- Document icon -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">                                            <!-- Bootstrap styles -->
+        <link href="css/fontello.css" rel="stylesheet">                                                 <!-- Bootstrap fonts -->
+        <link href="css/style.css" rel="stylesheet">                                                    <!-- My styles -->
         <title>Bootstrap 5</title>
     </head>
     <body>
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <form class="row g-3 needs-validation" novalidate>
-                        <div class="col-md-4">
-                          <label for="validationCustom01" class="form-label">First name</label>
-                          <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
-                          <div class="valid-feedback">
-                            Looks good!
-                          </div>
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+
+                        <!-- White text centered -->
+                        <h1 class="text-center text-white">Видеокурс по верстке для начинающих HTML & CSS</h1>
+
+                        <!-- Play button with triangle associated with modal window -->
+                        <div class="itd-play" data-bs-toggle="modal" data-bs-target="#myModal">
+                            <div class="itd-triangle"></div>
                         </div>
-                        <div class="col-md-4">
-                          <label for="validationCustom02" class="form-label">Last name</label>
-                          <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
-                          <div class="valid-feedback">
-                            Looks good!
-                          </div>
+
+                        <!-- Order button -->
+                        <a href="#footer" class="btn btn-itd btn-lg text-uppercase">Заказать</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+
+
+
+        
+        <footer id="footer">
+            
+        </footer>
+
+        <!-- Modalwindow containing video -->
+        <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Трейлер видео-курса по HTML и CSS</h5>
+                    </div>
+                    <div class="modal-body">
+                        <div class='embed-container'>
+                            <iframe src='https://www.youtube.com/embed//41tdjZWeCH0' frameborder='0' allowfullscreen></iframe>
                         </div>
-                        <div class="col-md-4">
-                          <label for="validationCustomUsername" class="form-label">Username</label>
-                          <div class="input-group">
-                            <span class="input-group-text" id="inputGroupPrepend">@</span>
-                            <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
-                            <div class="invalid-feedback">
-                              Please choose a username.
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                          <label for="validationCustom03" class="form-label">City</label>
-                          <input type="text" class="form-control" id="validationCustom03" required>
-                          <div class="invalid-feedback">
-                            Please provide a valid city.
-                          </div>
-                        </div>
-                        <div class="col-md-3">
-                          <label for="validationCustom04" class="form-label">State</label>
-                          <select class="form-select" id="validationCustom04" required>
-                            <option selected disabled value="">Choose...</option>
-                            <option>...</option>
-                          </select>
-                          <div class="invalid-feedback">
-                            Please select a valid state.
-                          </div>
-                        </div>
-                        <div class="col-md-3">
-                          <label for="validationCustom05" class="form-label">Zip</label>
-                          <input type="text" class="form-control" id="validationCustom05" required>
-                          <div class="invalid-feedback">
-                            Please provide a valid zip.
-                          </div>
-                        </div>
-                        <div class="col-12">
-                          <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                            <label class="form-check-label" for="invalidCheck">
-                              Agree to terms and conditions
-                            </label>
-                            <div class="invalid-feedback">
-                              You must agree before submitting.
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-12">
-                          <button class="btn btn-primary" type="submit">Submit form</button>
-                        </div>
-                      </form>
+                    </div>
                 </div>
             </div>
         </div>
 
-
-
-        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>                                              <!-- Bootstrap scripts -->
     </body>
 </html>
