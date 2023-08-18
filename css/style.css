@@ -138,3 +138,12 @@ header, footer{
     background-color: var(--color1);
     margin: 15px auto 30px;
 }
+
+
+/************************************************FOR HOM***************************************************************/
+
+.forhom h5{
+    font-size: 1em;
+    padding: 50px;
+    border: 3px solid var(--color1);
+}
