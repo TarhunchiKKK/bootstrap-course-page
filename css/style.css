@@ -168,3 +168,13 @@ header, footer{
     padding: 25px;
     border: 3px solid var(--color1);
 }
+
+
+/************************************************ABOUT AUTHOR***************************************************************/
+.autor{
+    padding-bottom: 0;
+}
+
+.itd-img{
+    max-width: 260px;
+}
