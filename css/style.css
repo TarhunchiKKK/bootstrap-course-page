@@ -91,26 +91,8 @@ header, footer{
 
 /************************************************ABOUT***************************************************************/
 
-/* Text colors */
-.color1{
-    color: var(--color1);
-}
 
-.color2{
-    color: var(--color2);
-}
-
-/* Background colors */
-.bg1{
-    background-color: var(--color1);
-}
-
-.bg2{
-    background-color: var(--color2);
-}
-
-
-.about, .shedule, .learning{
+.about, .shedule, .learning, .buy{
     background-color: #eee;
 }
 
@@ -139,6 +121,24 @@ header, footer{
     margin: 15px auto 30px;
 }
 
+
+/* Text colors */
+.color1{
+    color: var(--color1);
+}
+
+.color2{
+    color: var(--color2);
+}
+
+/* Background colors */
+.bg1{
+    background-color: var(--color1);
+}
+
+.bg2{
+    background-color: var(--color2);
+}
 
 /************************************************FOR HOM***************************************************************/
 
@@ -177,4 +177,11 @@ header, footer{
 
 .itd-img{
     max-width: 260px;
+}
+
+
+
+.rounded{
+    border: 3px solid var(--color1);
+    border-radius: 50% !important;
 }
